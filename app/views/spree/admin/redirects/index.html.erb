@@ -1,12 +1,12 @@
 <%= render :partial => 'spree/admin/shared/configuration_menu' %>
 
 <h1>Listing Redirects</h1>
-
+<br>
 <table class="index">
   <thead>
 	<tr>
-    	<th><%= sort_link @search, :old_url,  t('redirect.old_url') %></th>
-    	<th><%= sort_link @search, :new_url, t('redirect.new_url') %></th>
+    	<th><%= t('redirect.old_url') %></th>
+    	<th><%= t('redirect.new_url') %></th>
     	<th><%= t('action') %></th>
 	</tr>
   </thead>
@@ -24,7 +24,7 @@
   </tbody>
 </table>
 
-<%= paginate @collection %>
+<% #paginate @collection %>
 
 <div id="new_redirect_form"></div>
 <br/>
